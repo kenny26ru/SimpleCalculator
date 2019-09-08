@@ -16,13 +16,13 @@ public class Main {
                 if (s.contains("+")){
                     String[] n = s.split("\\+");
 // Проверка на римские цифры
-                    if (ToRoman.map.containsValue(n[0]) && ToRoman.map.containsValue(n[1])){
+                    if (ToRoman.map.containsValue(n[0].trim()) && ToRoman.map.containsValue(n[1].trim())){
 
                         for (Map.Entry<Integer, String> m : ToRoman.map.entrySet()){
 
                             for (Map.Entry<Integer, String> p : ToRoman.map.entrySet()){
 
-                                if (m.getValue().equals(n[0]) && p.getValue().equals(n[1])){
+                                if (m.getValue().equals(n[0].trim()) && p.getValue().equals(n[1].trim())){
                                     System.out.println(ToRoman.toRoman(ArithmeticAction.addition(m.getKey(),p.getKey())));
                                 }
                             }
@@ -43,13 +43,13 @@ public class Main {
                     String[] n = s.split("-");
 
 // Проверка на римские цифры
-                    if (ToRoman.map.containsValue(n[0]) && ToRoman.map.containsValue(n[1])){
+                    if (ToRoman.map.containsValue(n[0].trim()) && ToRoman.map.containsValue(n[1].trim())){
 
                         for (Map.Entry<Integer, String> m : ToRoman.map.entrySet()){
 
                             for (Map.Entry<Integer, String> p : ToRoman.map.entrySet()){
 
-                                if (m.getValue().equals(n[0]) && p.getValue().equals(n[1])){
+                                if (m.getValue().equals(n[0].trim()) && p.getValue().equals(n[1].trim())){
                                     System.out.println(ToRoman.toRoman(ArithmeticAction.subtraction(m.getKey(),p.getKey())));
                                 }
                             }
@@ -71,13 +71,13 @@ public class Main {
                     String[] n = s.split("\\*");
 
 // Проверка на римские цифры
-                    if (ToRoman.map.containsValue(n[0]) && ToRoman.map.containsValue(n[1])){
+                    if (ToRoman.map.containsValue(n[0].trim()) && ToRoman.map.containsValue(n[1].trim())){
 
                         for (Map.Entry<Integer, String> m : ToRoman.map.entrySet()){
 
                             for (Map.Entry<Integer, String> p : ToRoman.map.entrySet()){
 
-                                if (m.getValue().equals(n[0]) && p.getValue().equals(n[1])){
+                                if (m.getValue().equals(n[0].trim()) && p.getValue().equals(n[1].trim())){
                                     System.out.println(ToRoman.toRoman(ArithmeticAction.multiplication(m.getKey(),p.getKey())));
                                 }
                             }
@@ -99,13 +99,13 @@ public class Main {
                     String[] n = s.split("/");
 
 // Проверка на римские цифры
-                    if (ToRoman.map.containsValue(n[0]) && ToRoman.map.containsValue(n[1])){
+                    if (ToRoman.map.containsValue(n[0].trim()) && ToRoman.map.containsValue(n[1].trim())){
 
                         for (Map.Entry<Integer, String> m : ToRoman.map.entrySet()){
 
                             for (Map.Entry<Integer, String> p : ToRoman.map.entrySet()){
 
-                                if (m.getValue().equals(n[0]) && p.getValue().equals(n[1])){
+                                if (m.getValue().equals(n[0].trim()) && p.getValue().equals(n[1].trim())){
                                     System.out.println(ToRoman.toRoman(ArithmeticAction.division(m.getKey(),p.getKey())));
                                 }
                             }

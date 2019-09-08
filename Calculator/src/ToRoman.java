@@ -1,7 +1,7 @@
 import java.util.TreeMap;
 
 public class ToRoman {
-    static TreeMap<Integer,String> map = new TreeMap<>();
+   static TreeMap<Integer,String> map = new TreeMap<>();
 
     static {
         map.put(1,"I");
