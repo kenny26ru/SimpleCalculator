@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Test: ");
+
+        Test.test();
+
         System.out.println("Введите арифметическое действие");
 
         Scanner scanner = new Scanner(System.in);
